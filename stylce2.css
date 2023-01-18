@@ -1,0 +1,206 @@
+/* 
+
+:root {
+    --color-primary: #ff3c00;
+}
+
+.Loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 40vh;
+    width: 200px;
+    margin-top: 150px;
+    margin-left: 570px;
+
+}
+
+.Loader::before {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    left: -6px;
+    height: 10px;
+    width: 60px;
+    background: #000;
+    border-radius: 50%;
+    filter: blur(4px);
+    opacity: 0.5;
+    animation: shadow 2s linear infinite;
+    animation-delay: -1s;
+
+}
+
+@keyframes shadow {
+
+    0%,
+    100% {
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+
+    30% {
+        transform: scale(.5);
+        opacity: 0.5;
+    }
+
+}
+
+.semi-circle {
+    position: absolute;
+  
+    width: 200px;
+    height: 200px;
+    border-bottom: 30px solid var(--color-primary);
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.ball {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% + 50px);
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    animation: bounce 2s linear infinite;
+
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-250px);
+    }
+
+    40% {
+        transform: translateY(-300px);
+    }
+}
+
+
+.ball2 {
+    position: absolute;
+    top: calc(50% + 0px);
+    left: calc(50% - 100px);
+    z-index: 1;
+    animation: bounce2 2s linear infinite;
+    animation-delay: 1s;
+
+}
+
+@keyframes bounce2 {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(250px);
+    }
+
+    40% {
+        transform: translateY(300px);
+    }
+} */
+
+
+
+
+
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 40vh;
+    width: 570px;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.loader::before {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    height: 10px;
+    width: 60px;
+    background-color: red;
+    border-radius: 50%;
+    filter: blur(4px);
+    opacity: 0.5s;
+    animation: shadow 2s linear infinite;
+}
+
+@keyframes shadow {
+    0% {
+        transform: scale(1.5s);
+        opacity: 0;
+
+
+    }
+    50% {
+        transform: scale(0.5s);
+        opacity: 0.5s;
+
+    }
+}
+.semi-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-bottom: 30px solid red;
+    border-radius: 50%;
+    animation:  roate 2s linear infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
+.ball {
+    position: absolute;
+    top: calc(50% , 50%);
+    left: calc(50% , 50%);
+    width: 0px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: anime 2s linear infinite;
+
+}
+@keyframes anime {
+    0# {
+        transform: transform: scs;;
+    }
+    
+}

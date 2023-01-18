@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.btn {
+  margin-top: 32rem;
+  cursor: pointer;
+}
+.show {
+    width: 50%;
+    text-align: center;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -700px;
+    padding: 50px 50px;
+    top: -400px;
+    /* opacity: 0; */
+   
+
+}
+.more{
+    transition: 0.5s ease ;
+  left: 25%;
+}
